@@ -1,8 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComp from './Components/NavbarComp';
-import Favorites from '../src/Components/Favorites.jsx';
 import Home from './Components/Home.jsx';
+import Favourites from './Components/Favourites.jsx';
 import { Routes, Route } from 'react-router-dom';
+import Movie from './Components/Movie.jsx';
 
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
 
         <div>
           <Routes>
-            <Route path='/about' element={<Favorites />} />
+            <Route path='/favourites' element={<Favourites />} />
             <Route path='/' element={<Home />} />
+            <Route path='/movie/:id' element={<Movie />} />
           </Routes>
         </div>
       </div>

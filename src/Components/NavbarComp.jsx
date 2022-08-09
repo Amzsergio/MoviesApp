@@ -19,7 +19,7 @@ const NavbarComp = () => {
                     navbarScroll
                 >
                     <Nav.Link as={Link} to={"/"} >Home</Nav.Link>
-                    <Nav.Link as={Link} to={"/favorites"}>Favorites</Nav.Link>
+                    <Nav.Link as={Link} to={"/favourites"}>Favorites</Nav.Link>
                     {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
                     <NavDropdown.Item href="#action4">
                         Another action

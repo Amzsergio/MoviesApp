@@ -1,4 +1,4 @@
-import {GET_MOVIES, ADD_TO_FAVORITE, REMOVE_MOVIE_FAVORITE, GET_MOVIE_DETAIL} from '../actions/actionTypes.js'
+import {GET_MOVIES, ADD_TO_FAVOURITE, REMOVE_MOVIE_FAVOURITE, GET_MOVIE_DETAIL} from '../actions/actionTypes.js'
 
 const API_KEY = '6d022ee2'
 
@@ -22,16 +22,16 @@ export function getMovieDetail(){
     }
 }
 
-export function addMovieFavorite(){
+export function addMovieFavourite(movieInfo){
     return {
-        type:ADD_TO_FAVORITE,
-        payload: ''
+        type:ADD_TO_FAVOURITE,
+        payload: movieInfo
     }
 }
 
-export function removeMovieFavorite(){
+export function removeMovieFavorite(id){
     return {
-        type: REMOVE_MOVIE_FAVORITE,
-        payload: ''
+        type: REMOVE_MOVIE_FAVOURITE,
+        payload: id
     }
 }

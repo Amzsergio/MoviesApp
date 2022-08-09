@@ -2,8 +2,9 @@ import React, {Fragment, useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
-import { getMovies } from '../redux/actions';
-import { connect } from 'react-redux'
+import { getMovies, addMovieFavourite } from '../redux/actions';
+import { connect } from 'react-redux';
+import {Link} from 'react-router-dom'
 
 
 
@@ -20,6 +21,7 @@ function Home(props) {
   }
 
   return (
+
     <div> 
       <h1>Searcher</h1>
        <h4>Movie:</h4>
@@ -38,10 +40,13 @@ function Home(props) {
         <div>
           <ul>
             {props.moviesLoaded.map((movie) => {
+
               return(
-                <Card className='mt-5' key={movie.imdbID}>
-                  <Card.Title> {movie.Title} </Card.Title>
-                  <Button variant="outline-success">Add to Favorites </Button>
+                  <Card className='mt-5' key={movie.imdbID}>
+                  <Link to={`/movie/${movie.imdbID}`}> 
+                    <Card.Title> {movie.Title} </Card.Title>
+                  </Link>
+                  <Button variant="outline-success" onClick={() => props.addToFavourite(movie)}>  💚 Favourites </Button>
                 </Card>                
               )
             })}
@@ -59,7 +64,8 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
   return{
-    getMovies: (movie) => dispatch(getMovies(movie))
+    getMovies: (movie) => dispatch(getMovies(movie)),
+    addToFavourite: (movieObject) => dispatch(addMovieFavourite(movieObject))
   }
 }
 
