@@ -15,10 +15,16 @@ export function getMovies(title){
     }
 }
 
-export function getMovieDetail(){
-    return {
-        type:GET_MOVIE_DETAIL,
-        payload: ''
+export function getMovieDetail(id){
+    return(dispatch) => {
+        return fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`)
+        .then(res => res.json())
+        .then(json => {
+            return dispatch({
+                type: GET_MOVIE_DETAIL,
+                payload: json
+            })
+        })
     }
 }
 

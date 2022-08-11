@@ -24,7 +24,13 @@ function RootReducer(state = initialState, action) {
       return {
         ...state, 
         moviesLoaded: action.payload
-      }``
+      }
+    
+    case GET_MOVIE_DETAIL:
+      return {
+        ...state,
+        movieDetail: action.payload   
+      }
   
     default:
       return state;

@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path='/favourites' element={<Favourites />} />
             <Route path='/' element={<Home />} />
-            <Route path='/movie/:id' element={<Movie />} />
+            <Route path='/movie/:idMovie' element={<Movie />} />
           </Routes>
         </div>
       </div>
