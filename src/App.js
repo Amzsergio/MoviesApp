@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarComp from './Components/NavbarComp';
+import NavbarComp from './Components/Navbar/NavbarComp';
 import Home from './Components/Home/Home.jsx';
-import Favourites from './Components/Favourites.jsx';
+import Favourites from './Components/Favourites/Favourites.jsx';
 import { Routes, Route } from 'react-router-dom';
-import Movie from './Components/Movie.jsx';
+import Movie from './Components/Movies/Movie.jsx';
 
 
 function App() {

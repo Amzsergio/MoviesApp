@@ -4,7 +4,7 @@ import { ListGroup } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom'
-import { removeMovieFavorite } from '../redux/actions';
+import { removeMovieFavorite } from '../../redux/actions';
 
 
 function Favourites(props) {

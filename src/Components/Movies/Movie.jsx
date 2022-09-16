@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Card from 'react-bootstrap/Card'
 import { connect } from 'react-redux'
 import { useParams } from 'react-router-dom'
-import { getMovieDetail } from '../redux/actions/index.js'
+import { getMovieDetail } from '../../redux/actions/index.js'
 
 function Movie(props) {
   
