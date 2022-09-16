@@ -2,7 +2,7 @@ import React, {Fragment, useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
-import { getMovies, addMovieFavourite } from '../redux/actions';
+import { getMovies, addMovieFavourite } from '../../redux/actions';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom'
 
@@ -22,7 +22,7 @@ function Home(props) {
 
   return (
 
-    <div> 
+    <div className=''> 
       <h1>Searcher</h1>
        <h4>Movie:</h4>
         <Form className="d-flex" onSubmit={(e) => onHandleSubmit(e)}>
