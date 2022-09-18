@@ -9,7 +9,7 @@ import { removeMovieFavorite } from '../../redux/actions';
 
 function Favourites(props) {
 
-  console.log(props.favouriteMovies)
+  // console.log(props.favouriteMovies)
 
   return (
     <ListGroup as="ol" numbered>
