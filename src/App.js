@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarComp from './Components/Navbar/NavbarComp';
+import NavbarComp from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home.jsx';
 import Favourites from './Components/Favourites/Favourites.jsx';
 import { Routes, Route } from 'react-router-dom';
