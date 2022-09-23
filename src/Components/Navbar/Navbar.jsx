@@ -11,7 +11,7 @@ const NavbarComp = () => {
     <div>
          <Navbar bg="dark" variant="dark" expand='md'>
                 <Container fluid>
-                        <Navbar.Brand href="/">
+                        <Navbar.Brand as={Link} to={'/'} className='fw-bold'>
                             <img
                                 alt="logo"
                                 src="/yourMovieLogo.png"
@@ -19,7 +19,7 @@ const NavbarComp = () => {
                                 height="40"
                                 className="d-inline-block align-top"
                             />{" "}
-                            YourMovie</Navbar.Brand>
+                            MyMovies</Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`}/>
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-md`}
@@ -28,7 +28,7 @@ const NavbarComp = () => {
                         >
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
-                                    <Navbar.Brand href="/">
+                                    <Navbar.Brand as={Link} to={'/'}>
                                         <img
                                             alt="logo"
                                             src="/yourMovieLogo.png"
@@ -36,7 +36,7 @@ const NavbarComp = () => {
                                             height="30"
                                             className="d-inline-block align-top"
                                         />{" "}
-                                    YourMovie</Navbar.Brand>
+                                    MyMovies</Navbar.Brand>
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
