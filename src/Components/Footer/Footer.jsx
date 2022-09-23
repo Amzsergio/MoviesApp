@@ -22,10 +22,18 @@ const Footer = () => {
                     <ul className='col-12 col-md-4 list-unstyled'>
                         <li className='fw-bold mb-4 text-center'> Follow Us</li>
                         <li className='d-flex justify-content-between'>
-                            <i className="bi bi-github"></i>
-                            <i className="bi bi-facebook"></i>
-                            <i className="bi bi-instagram"></i>
-                            <i className="bi bi-linkedin"></i>
+                            <a href="https://github.com/Amzsergio" target='_blank' class='text-decoration-none text-reset'>
+                                <i className="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.facebook.com/amzsergioandres" target='_blank' class='text-decoration-none text-reset'>
+                                <i className="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://github.com/Amzsergio" target='_blank' class='text-decoration-none text-reset'>
+                                <i className="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/amzsergio/" target='_blank' class='text-decoration-none text-reset'>
+                                <i className="bi bi-linkedin"></i>
+                            </a>
                         </li>
                     </ul>
                 </nav>
