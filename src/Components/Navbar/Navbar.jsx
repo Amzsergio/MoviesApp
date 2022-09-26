@@ -32,8 +32,8 @@ const NavbarComp = () => {
                                         <img
                                             alt="logo"
                                             src="/yourMovieLogo.png"
-                                            width="30"
-                                            height="30"
+                                            width="35"
+                                            height="35"
                                             className="d-inline-block align-top"
                                         />{" "}
                                     MyMovies</Navbar.Brand>
