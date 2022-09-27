@@ -20,7 +20,7 @@ const Footer = () => {
                         <li><Link to='/favourites' class='text-decoration-none text-reset'>Favourites</Link></li>
                     </ul>
                     <ul className='col-12 col-md-4 list-unstyled'>
-                        <li className='fw-bold mb-4 text-center'> Follow Us</li>
+                        <li className='fw-bold mb-4 text-center'> Social Media</li>
                         <li className='d-flex justify-content-between'>
                             <a href="https://github.com/Amzsergio" target='_blank' class='text-decoration-none text-reset'>
                                 <i className="bi bi-github"></i>
