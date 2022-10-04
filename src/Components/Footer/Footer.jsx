@@ -7,8 +7,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 const Footer = () => {
   return (
     <div>
-        <footer className='text-white py-2 bg-dark'>
-            <CardGroup className="container">
+        <footer className='w-100 bg-dark' style={{height: "280px"}} >
+            <CardGroup className="container text-white py-5 ">
                     <Card border='dark' className='bg-dark py-4'>
                         <Link to='/' className='text-center text-decoration-none fw-bold fs-4 text-danger'>
                             <Card.Img  style={ {width: "50px"}} variant='top' src="/yourMovieLogo.png" alt="yourMovie Logo" /> MyMovies
