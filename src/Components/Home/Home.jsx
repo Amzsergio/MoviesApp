@@ -22,7 +22,7 @@ function Home(props) {
 
   return (
 
-    <div className=""> 
+    <div className="d-flex flex-column min-vh-100"> 
       <h1>Searcher</h1>
        <h4>Movie:</h4>
         <Form className="d-flex" onSubmit={(e) => onHandleSubmit(e)}>

@@ -4,7 +4,7 @@ import './About.css'
 
 function About() {
   return (
-    <div className='aboutSection'>
+    <div className='aboutSection d-flex flex-column min-vh-100'>
         <Card>
             <Card.Body>
                 <Card.Title> About This WebSite</Card.Title>
@@ -14,6 +14,8 @@ function About() {
                         <ListGroup.Item >React JS</ListGroup.Item>
                         <ListGroup.Item >Redux</ListGroup.Item>
                         <ListGroup.Item >Webpack</ListGroup.Item>
+                        <ListGroup.Item >Bootstrap 5</ListGroup.Item>
+                        <ListGroup.Item >React-Bootstrap</ListGroup.Item>
                     </ListGroup>
                     I have used this movies api: <Card.Link href='https://www.omdbapi.com/' target='_blank' >Omdb Api</Card.Link>
                     <br/>
