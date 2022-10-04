@@ -2,8 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas'
-// import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import {Link} from 'react-router-dom'
 
 const NavbarComp = () => {
@@ -43,6 +42,7 @@ const NavbarComp = () => {
                                 <Nav variant='tabs' className='justify-content-end flex-grow-1 pe-5'>
                                     <Nav.Link as={Link} to={"/"} >Home</Nav.Link>
                                     <Nav.Link as={Link} to={"/favourites"}>Favourites</Nav.Link>
+                                    <Nav.Link as={Link} to={"/about"}>About</Nav.Link>
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
@@ -56,10 +56,3 @@ const NavbarComp = () => {
 export default NavbarComp
 
 
-
-// <Nav.Item>
-// <Nav.Link as={Link} to={"/"} >Home</Nav.Link>
-// </Nav.Item>
-// <Nav.Item>
-{/* <Nav.Link as={Link} to={"/favourites"}>Favorites</Nav.Link> */}
-// </Nav.Item>
