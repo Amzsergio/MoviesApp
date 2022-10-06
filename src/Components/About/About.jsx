@@ -16,6 +16,7 @@ function About() {
                         <ListGroup.Item >Webpack</ListGroup.Item>
                         <ListGroup.Item >Bootstrap 5</ListGroup.Item>
                         <ListGroup.Item >React-Bootstrap</ListGroup.Item>
+                        <ListGroup.Item >Api Rest</ListGroup.Item>
                     </ListGroup>
                     I have used this movies api: <Card.Link href='https://www.omdbapi.com/' target='_blank' >Omdb Api</Card.Link>
                     <br/>
