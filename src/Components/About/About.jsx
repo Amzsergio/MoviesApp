@@ -20,7 +20,7 @@ function About() {
                     </ListGroup>
                     I have used this movies api: <Card.Link href='https://www.omdbapi.com/' target='_blank' >Omdb Api</Card.Link>
                     <br/>
-                      In this SPA you can search for any movie and you'll be able to save your favorite ones in the the "favourites" window. 
+                      This is a Single Page App built in order you can search for any movie information and also you'll be able to save your favorite ones in the the "favourites" window. 
                 </Card.Text>
             </Card.Body>
         </Card>
